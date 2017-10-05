@@ -1,4 +1,6 @@
-MANIFEST
+# Development settings
+*.swp
+local_settings.py
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -7,14 +9,11 @@ __pycache__/
 *.so
 
 # Distribution / packaging
-.Python
-env/
 bin/
 build/
 develop-eggs/
 dist/
 eggs/
-lib/
 lib64/
 parts/
 sdist/
@@ -22,13 +21,16 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+MANIFEST
 
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
 
+# IDE idea files
+*.idea
+
 # Unit test / coverage reports
-htmlcov/
 .tox/
 .coverage
 .cache
@@ -42,6 +44,7 @@ coverage.xml
 .mr.developer.cfg
 .project
 .pydevproject
+.settings
 
 # Rope
 .ropeproject
@@ -52,4 +55,38 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+
+# Local virtualenvs used for testing.
+/.env*
+
+# PIP install version files.
+/=*
+
+# Local caching folders.
+.pip_cache
+.tarball_cache
+.manifests
+/static
+/burlap
+/.idea
+/arch
+/media*
+/node_modules
+/snapshots
+/fabfile_sensitive.py
+/.burlap/
+/.vagrant/
+/.buildpath
+
+# Ignore temporary Excel lock files.
+.~lock.*
+
+*.key
+*.csr
+*.pem
+*.crt
+/test_jira.py
+
+*.geany
+/nohup.out
 

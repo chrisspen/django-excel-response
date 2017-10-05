@@ -4,7 +4,7 @@ import csv
 import xlwt
 try:
     from StringIO import StringIO
-except:
+except ImportError:
     from io import StringIO
 
 from django.db.models.query import QuerySet
