@@ -1,9 +1,12 @@
 #!/usr/bin/env python
 from distutils.core import setup
 
-ld = open('README.rst').read()
+try:
+	ld = open('README.rst').read()
+except:
+	ld = ''
 
-version = '1.53'
+version = '1.54'
 
 setup(
     name='django-excel-response4',
