@@ -3,7 +3,7 @@ from distutils.core import setup
 
 ld = open('README.rst').read()
 
-version = '1.52'
+version = '1.53'
 
 setup(
     name='django-excel-response4',
